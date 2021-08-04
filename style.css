@@ -8,6 +8,11 @@ body, html {
     height: 100%;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -18,7 +23,6 @@ body, html {
     color: #ebdbb2;
     font-family: IBM Plex Mono;
     font-weight: 400;
-
 }
 
 #sentence::after {
