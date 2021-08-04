@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+body, html {
+    background-color: #282828;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sentence {
+    color: #ebdbb2;
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+
+}
+
+#sentence::after {
+    content: "|";
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: #ebdbb200;
+    }
+    50% {
+        color: #ebdbb2;
+    }
+    100% {
+        color: #ebdbb200;
+    }
+}
